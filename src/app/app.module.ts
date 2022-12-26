@@ -27,7 +27,10 @@ import { AuthModule } from './auth/auth.module';
     ComposeMessageComponent,
     PageNotFoundComponent
   ],
-  bootstrap: [ AppComponent ]
+  exports: [],
+  providers: [],
+  entryComponents: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
   // Diagnostic only: inspect router configuration

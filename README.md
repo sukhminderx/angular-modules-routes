@@ -26,16 +26,18 @@ Routing
 1.	Introduction
 2.	RouterModule
 3.	Defining AppRoutingModule, routes array
-4.	Setting up wildcard routes and redirectTo
-5.	Routing directives – router-outlet, routerLink, routerLinkActive
-6.	Getting route information, ActivatedRoute, paramMap, queryParams
-7.	Router service
-8.	Nesting Routes
-9.	 Lazy-loading feature modules
-10.	 Route guards
+4.	Setting up wildcard routes and redirectTo, src\app\app-routing.module.ts
+5.	Routing directives – router-outlet, routerLink, routerLinkActive, src\app\app.component.html
+6.	Getting route information, ActivatedRoute, paramMap, queryParams: src\app\heroes\hero-detail\hero-detail.component.ts . Show how to debug
+7.	Router service. Back button in hero-detail.component.ts
+8.	Nesting Routes. Introduction. src\app\admin\admin-routing.module.ts
+9.	 Lazy-loading feature modules. Demonstration: loadChildren: () => import('./crisis-center/crisis-center.module')
+10.	 Route guards. src\app\app-routing.module.ts admin module and auth
+ Demonstration in inspect: without guard success, admin module doesnot load, login component will be shown.
+Other guards added in src\app\admin\admin-routing.module.ts
 a.	canActivate
 b.	canDeactivate
 c.	canLoad
 d.	canActivateChild
-11.	 Resolve
+11.	 Resolve. 
 12.	 LocationStrategy
